@@ -1,0 +1,24 @@
+.red-background-navbar {
+    background: #7d0000;
+}
+
+.navbar-custom .container {
+    & .navbar-brand {
+        color: white;
+    }
+
+    & .navbar-nav .nav-link {
+        color: white;
+    }
+
+    & .navbar-nav .nav-link.selected {
+        color: black;
+    }
+    & .navbar-nav .nav-link:focus {
+        outline: none;
+    }
+
+    & .disabled-register {
+        cursor: not-allowed;
+    }
+}

@@ -1,0 +1,151 @@
+.module {
+    opacity: 0;
+    text-align: center;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border: solid rgb(117, 18, 18);
+    border-color: rgb(117, 18, 18);
+    border-width: 3px 3px 5px 5px;
+    border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+    transform: rotate(-2deg);
+    height: 0px;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.moduleText {
+    opacity: 0;
+}
+.loading {
+    overflow: hidden;
+    max-width: 600px;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+#contentContainer {
+    height: calc(100vh - 120px);
+    /* background:blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+.loadingContainer {
+    height: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#loadingText {
+    margin-left: 120px;
+    font-weight: 800;
+    font-size: 3.5rem;
+}
+@media only screen and (max-height: 578px) {
+    .module {
+        transform: rotate(0deg);
+    }
+}
+@media only screen and (max-height: 488px) {
+    #contentContainer {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+@media only screen and (max-height: 413px) {
+    #contentContainer {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+@media only screen and (max-height: 365px) {
+    #contentContainer {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+}
+@media only screen and (max-height: 318px) {
+    #contentContainer {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #loadingText {
+        margin-left: 70px !important;
+        font-size: 2.5rem !important;
+    }
+}
+@media only screen and (max-width: 390px) {
+    #puckLoad {
+        margin-left: -45px !important;
+    }
+}
+
+// .hide-loading {
+//     display: none;
+// }
+
+// .default-loading {
+//     display: block;
+// }
+
+// div.default-congrats {
+//     display: none;
+
+//     & .module {
+//         opacity: 0;
+//         height: 0px;
+//         // transition: none;
+//     }
+
+//     // & .moduleText {
+//     //     opacity: 0;
+//     //     // transition: none;
+
+//     // }
+// }
+
+// div.congrats {
+//     display: block;
+
+//     & .module {
+//         opacity: 1;
+//         height: 300px;
+//         transition: opacity, height 0.5s ease-in;
+//     }
+
+//     // & .moduleText {
+//     //     opacity: 1;
+//     //     // transition: opacity 0s ease-out .3s;
+//     // }
+// }
+
+// .show-text {
+//     opacity: 1;
+// }
+
+#loading {
+    display: block;
+}
+
+#contents {
+    display: none;
+
+    & .module {
+        opacity: 0;
+        height: 0px;
+    }
+
+    & .moduleText {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,147 @@
+.column {
+	flex: 0 0 25%;
+	margin: 2px;
+	padding: 10px;
+    background: white;
+    border: 2px solid #a2a2a2;
+    border-radius: 4px;
+    outline: 0 none;
+    position: relative;
+    transition: all 0.75s ease-in-out 0s;
+    cursor: pointer;
+    background:white;
+
+}
+.column:focus{
+    border: 2px solid #4286f4;
+-moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+
+}
+
+.column:hover{
+  background:white;
+}
+
+  .column img{
+    transition: all 0.75s ease-in-out 0s;
+  }
+.column:hover img{
+  transform: scale(0.8, 0.8);
+-ms-transform: scale(0.8, 0.8);
+-webkit-transform: scale(0.8, 0.8);
+}
+
+.column::after, .column::before {
+  border-radius: 4px;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: scale(0);
+  transition: all 0.5s ease-in-out 0s;
+  width: 100%;
+  z-index: 3;
+}
+
+.column::before {
+  border-bottom: 4px solid #7d0000;
+  border-left: 4px solid #7d0000;
+  transform-origin: 0 100% 0;
+}
+
+.column::after {
+  border-right: 4px solid #7d0000;
+  border-top: 4px solid #7d0000;
+  transform-origin: 100% 0 0;
+}
+
+.column:hover::after, .column:hover::before {
+  transform: scale(1);
+}
+
+.column:hover .card-prizes.card-corner:before{
+    width:40px;
+  }
+  .column:hover .card-prizes.card-corner:after{
+   width:40px;
+  }  
+
+@media screen and (max-width: 980px) {
+    .column {
+          margin-bottom: 5px;
+      flex-basis: 40%;
+          
+      }
+  }
+  
+  @media screen and (max-width: 680px) {
+      .column {
+          flex-basis: 100%;
+          margin: 0 0 5px 0;
+      }
+  }
+
+    
+
+  .containerHeading{
+    color:white;
+    width: 100%;
+    height:50px;
+    overflow:hidden;
+    background:#343a40;
+    
+    margin-bottom:10px;
+    border-radius: 5px;
+  }
+
+  .card-prizes {
+    margin-bottom: 16px;
+    position: relative;
+    background-color: white;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  .card-prizes.card-corner:before {
+    border-radius: 5px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width:20px;
+    background: #7d0000;
+    transition: all 0.5s ease-in-out 0s;
+  }
+  .card-prizes.card-corner:after {
+    border-radius: 5px;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #7d0000;
+    height: 100px;
+    width:20px;
+    transition: all 0.5s ease-in-out 0s;
+  }
+
+  .card-header-prizes {
+    text-align:center;
+    position:absolute;
+    left:20%;
+    width: 60%;
+    height:50px;
+    overflow:hidden;
+    background: #343a40;
+    display:table;
+  }
+
+  .text-prizes{
+    display: table-cell;
+    vertical-align: middle;
+  } 
+
+  

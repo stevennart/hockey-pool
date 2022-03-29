@@ -1,0 +1,34 @@
+#parallax {
+  background: url("../../assets/images/ice.jpg") no-repeat center center fixed;
+  background-attachment: fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.content-section {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 991px) {
+  #parallax h1 {
+    font-size: 1.5em !important;
+    font-weight: 700;
+  }
+
+  #parallax h4 {
+    font-size: 1.2em !important;
+    font-weight: 700;
+  }
+}

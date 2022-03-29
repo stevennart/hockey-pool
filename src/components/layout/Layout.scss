@@ -1,0 +1,13 @@
+// https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers
+
+#sticky-footer {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+// style={{
+//     minHeight: '100vh',
+//     display: 'grid',
+//     gridTemplateRows: '1fr auto'
+// }}

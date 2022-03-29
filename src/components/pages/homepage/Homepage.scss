@@ -1,0 +1,11 @@
+.main-container {
+    /* Equal to footer height */
+    margin-bottom: -120px;
+    min-height: 100%;
+    padding: 0;
+  }
+  
+.main-container::after {
+    content: "";
+    display: block;
+}

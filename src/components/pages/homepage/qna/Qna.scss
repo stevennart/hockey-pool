@@ -1,0 +1,66 @@
+.content-section {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .questionTop
+{
+  color: #dc3545;
+  font-size: 3em;
+}
+
+.qandaWrapper {
+    width: 100%;
+  }
+  
+  .qandaWrapper .btn-link {
+    /* pointer-events: none; */
+    display: block; 
+    width: 100%;
+    text-align: center;
+    position: relative;
+    background: #343a40;
+    color: #fff;
+    border: none;
+    border-radius: 0;  
+    padding: 7px 15px 12px;    
+    font-size: 16px;
+    overflow: hidden;
+    font-weight:600;   
+  }
+    
+  .qandaWrapper .btn-link:before { 
+    position: absolute;
+    content: '';
+    background: #7d0000;
+    -webkit-transform: skew(-35deg);
+    transform: skew(-35deg);
+    height: 100%;
+    width: 50%;
+    left: -40%;
+    top: 0; 
+  }
+
+  
+.qandaWrapper .card-header { 
+    padding: 0;  
+    background: transparent;
+    border-bottom: none;
+    text-align:center;
+    width: 100%;
+    // height:50px;  
+    padding-bottom: 10px;  
+    background: #ddd;  
+}
+
+.qandaWrapper .card {   
+    border: none;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 black, 0 0 0 1px black;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  .card-body {
+    position: relative;
+  }  

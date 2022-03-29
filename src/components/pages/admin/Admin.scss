@@ -1,0 +1,146 @@
+#admin-container {
+  @font-face {
+    font-family: Ubuntu-Regular;
+    src: url("../../assets/fonts/ubuntu/Ubuntu-Regular.ttf");
+  }
+
+  padding-top: 90px;
+
+  #dropFileForm {
+    margin: 16px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  #dropFileForm #fileLabel {
+    background-color: rgba(99, 4, 4, 0.534);
+    display: block;
+    padding: 16px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  #dropFileForm #fileInput {
+    display: none;
+  }
+
+  #dropFileForm #fileLabel:after,
+  #dropFileForm #fileLabel:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: -2;
+    border-radius: 8px 8px 0 0;
+  }
+
+  #dropFileForm #fileLabel:before {
+    z-index: -1;
+    background: repeating-linear-gradient(45deg, transparent, transparent 5%, black 5%, black 10%);
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  #dropFileForm #fileLabel:hover {
+    background: repeating-linear-gradient(45deg, rgb(99, 4, 4), transparent 100%, black 5%, black 10%);
+
+    transition: 0.5s;
+  }
+  #dropFileForm.fileHover #fileLabel:before {
+    opacity: 0.25;
+  }
+
+  #dropFileForm .uploadButton:enabled {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(205, 50, 50);
+    color: #fff;
+    cursor: pointer;
+  }
+  #dropFileForm .uploadButton:hover:enabled {
+    background: rgb(99, 4, 4);
+    transition: 0.5s;
+  }
+  [disabled] {
+    background: rgb(136, 134, 134);
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 8px;
+    color: #fff;
+    cursor: not-allowed;
+  }
+
+  #dropFileForm.fileHover {
+    box-shadow: 0 0 16px rgb(205, 50, 50);
+  }
+
+  #fileLabelText {
+    color: white;
+    font-weight: 600;
+  }
+
+  #displayPassword {
+    padding: 5px;
+    background: #fff;
+    float: right;
+    margin-left: -25px;
+    margin-top: -37px;
+    position: relative;
+    z-index: 2;
+  }
+
+  #registration {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(#343a40, 0.75);
+    border-radius: 80px;
+    margin-left: 10px;
+    margin-bottom: 5vh;
+    width: 50%;
+    align-items: center;
+    padding: 2% 0;
+    font-family: "Ubuntu-Regular";
+
+    & h1 {
+      text-align: center;
+      font-family: "Lato";
+      font-size: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      height: 20vh;
+      // justify-content: space-evenly;
+      width: 60%;
+
+      label {
+        margin: 5% 0 0;
+        font-weight: 800;
+      }
+
+      & .register-btn {
+        justify-content: center;
+        align-items: center;
+        margin: 10% 0;
+      }
+
+      & #statusButton {
+        margin-left: 10px;
+      }
+      // & #statusButton {
+      //   align-self: center;
+      // }
+      // height: 50%;
+    }
+  }
+}
